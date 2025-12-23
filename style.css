@@ -27,19 +27,23 @@ header {
   padding: 60px 20px;
 }
 
-.logo {
+.header-content {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  gap: 10px;
-  font-size: 1.4rem;
+}
+
+/* LOGO IMAGEM */
+.logo {
   margin-bottom: 20px;
 }
 
-.logo span {
-  color: #00c2ff;
+.logo img {
+  width: 90px;
+  height: auto;
 }
 
+/* TÍTULO */
 header h1 {
   font-size: 2.5rem;
 }
