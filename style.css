@@ -5,15 +5,14 @@
   box-sizing: border-box;
 }
 
-/* ESTILO GERAL */
+/* GERAL */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f5f5f5;
+  background: #f5f5f5;
   color: #333;
   line-height: 1.6;
 }
 
-/* CONTAINER */
 .container {
   max-width: 1100px;
   margin: 0 auto;
@@ -22,20 +21,68 @@ body {
 
 /* HEADER */
 header {
-  background: #222;
+  background: linear-gradient(135deg, #1f1f1f, #2b2b2b);
   color: white;
   text-align: center;
   padding: 60px 20px;
 }
 
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.logo span {
+  color: #00c2ff;
+}
+
 header h1 {
-  font-size: 2.6rem;
+  font-size: 2.5rem;
 }
 
 header p {
-  margin-top: 12px;
-  font-size: 1.1rem;
+  margin-top: 10px;
   color: #ccc;
+}
+
+/* ACTIONS */
+.actions {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 22px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.primary {
+  background: #00c2ff;
+  color: #000;
+}
+
+.secondary {
+  background: transparent;
+  border: 2px solid #00c2ff;
+  color: #00c2ff;
+}
+
+.primary:hover {
+  background: #00a9dd;
+}
+
+.secondary:hover {
+  background: #00c2ff;
+  color: #000;
 }
 
 /* NAV */
@@ -62,18 +109,29 @@ nav a:hover {
 /* SECTIONS */
 section {
   background: white;
-  padding: 35px;
-  margin-bottom: 50px;
-  border-radius: 10px;
+  padding: 40px;
+  margin-bottom: 40px;
+  border-radius: 8px;
 }
 
 section h2 {
   margin-bottom: 20px;
-  font-size: 1.8rem;
 }
 
-section p {
-  margin-bottom: 15px;
+/* SERVICES */
+.services {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 250px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #00c2ff;
 }
 
 /* FORM */
@@ -82,13 +140,11 @@ form {
   flex-direction: column;
 }
 
-input,
-textarea {
+input, textarea {
   padding: 12px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1rem;
+  border-radius: 5px;
 }
 
 textarea {
@@ -98,35 +154,34 @@ textarea {
 
 button {
   padding: 14px;
-  background: #222;
+  background: #1f1f1f;
   color: white;
   border: none;
-  border-radius: 6px;
-  font-size: 1rem;
+  border-radius: 5px;
   cursor: pointer;
 }
 
 button:hover {
   background: #00c2ff;
+  color: #000;
 }
 
 /* FOOTER */
 footer {
-  background: #222;
+  background: #1f1f1f;
   color: white;
   text-align: center;
-  padding: 25px;
+  padding: 20px;
 }
 
 /* RESPONSIVO */
 @media (max-width: 768px) {
   .nav-links {
     flex-direction: column;
-    align-items: center;
     gap: 10px;
   }
 
-  header h1 {
-    font-size: 2.1rem;
+  .services {
+    flex-direction: column;
   }
 }
