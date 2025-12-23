@@ -8,48 +8,79 @@
 
 <body>
 
+  <!-- HEADER -->
   <header>
-    <div class="container">
+    <div class="container header-content">
+      <div class="logo">
+        <span>&lt;/&gt;</span>
+        <strong>Gabriel Dev</strong>
+      </div>
+
       <h1>Gabriel Fernando</h1>
-      <p>Desenvolvedor Web | Sites Profissionais</p>
+      <p>Desenvolvedor de Sites Profissionais</p>
+
+      <div class="actions">
+        <a href="#contato" class="btn primary">Solicitar orçamento</a>
+        <a href="https://wa.me/351937923406" target="_blank" class="btn secondary">WhatsApp</a>
+      </div>
     </div>
   </header>
 
+  <!-- NAV -->
   <nav>
     <div class="container nav-links">
-      <a href="https://wa.me/351937923406" target="_blank">💬 WhatsApp</a>
-      <a href="mailto:gabrielgstz0040@gmail.com">✉️ Gmail</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato</a>
     </div>
   </nav>
 
+  <!-- MAIN -->
   <main class="container">
 
+    <!-- SOBRE -->
     <section id="sobre">
       <h2>Sobre mim</h2>
       <p>
-        Sou <strong>desenvolvedor web</strong> focado na criação de sites modernos,
-        responsivos e profissionais para empresas, escolas e profissionais
-        autônomos.
+        Sou desenvolvedor web focado na criação de sites modernos,
+        rápidos e responsivos para empresas, profissionais e pequenos
+        negócios. Trabalho com foco em clareza, organização e resultados,
+        ajudando meus clientes a terem presença profissional na internet.
       </p>
-
       <p>
-        Trabalho com <strong>HTML e CSS</strong>, criando layouts organizados,
-        visualmente agradáveis e adaptados para celulares, tablets e
-        computadores. Meu objetivo é ajudar clientes a terem uma presença
-        online profissional, clara e confiável.
-      </p>
-
-      <p>
-        Atendo projetos de forma <strong>100% online</strong>, podendo trabalhar
-        com clientes de qualquer lugar do mundo.
+        Atendo de forma totalmente online, podendo desenvolver projetos
+        para qualquer lugar do mundo.
       </p>
     </section>
 
+    <!-- SERVIÇOS -->
+    <section id="servicos">
+      <h2>Serviços</h2>
+
+      <div class="services">
+        <div class="card">
+          <h3>Sites Institucionais</h3>
+          <p>Sites profissionais para empresas, escolas e negócios locais.</p>
+        </div>
+
+        <div class="card">
+          <h3>Portfólios</h3>
+          <p>Páginas pessoais para apresentar serviços e projetos.</p>
+        </div>
+
+        <div class="card">
+          <h3>Responsividade</h3>
+          <p>Sites adaptados para celular, tablet e computador.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
     <section id="contato">
       <h2>Contato</h2>
 
-      <!-- FORMULÁRIO COM FORMSUBMIT -->
       <form action="https://formsubmit.co/gabrielgstz0040@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Novo contato pelo site">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_next" value="https://gabrielcsshtml.github.io/meu-site-2/">
 
@@ -63,8 +94,9 @@
 
   </main>
 
+  <!-- FOOTER -->
   <footer>
-    <p>📞 Telefone / WhatsApp: +351 937 923 406</p>
+    <p>© 2025 • Gabriel Fernando • Desenvolvedor Web</p>
   </footer>
 
 </body>
