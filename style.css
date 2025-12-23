@@ -33,13 +33,13 @@ header {
   align-items: center;
 }
 
-/* LOGO IMAGEM (AJUSTADA) */
+/* LOGO */
 .logo {
   margin-bottom: 20px;
 }
 
 .logo img {
-  width: 55px;        /* TAMANHO CORRETO */
+  width: 55px;
   height: auto;
   filter: drop-shadow(0 2px 6px rgba(0,0,0,0.3));
 }
@@ -189,8 +189,14 @@ footer {
   .services {
     flex-direction: column;
   }
-
-  .logo img {
-    width: 65px; /* um pouco maior no mobile */
-  }
 }
+
+/* ==================================================
+   FORÇA DEFINITIVA DO TAMANHO DA LOGO (NÃO QUEBRA)
+   ================================================== */
+header .logo img {
+  width: 48px !important;
+  max-width: 48px !important;
+  height: auto !important;
+}
+
