@@ -242,8 +242,53 @@ footer {
   list-style: none;
   padding-left: 0;
 }
+/* =========================
+   CONTACTO PERSONALIZADO
+   ========================= */
+
+.contact-wrapper {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.contact-info,
+.contact-form-box {
+  flex: 1;
+  min-width: 280px;
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.contact-info h2,
+.contact-form-box h2 {
+  margin-bottom: 15px;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 20px 0;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+}
+
+.contact-form-box {
+  border-left: 4px solid #00c2ff;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+}
 
 .about-diff li {
   margin-bottom: 10px;
   font-size: 1rem;
 }
+
