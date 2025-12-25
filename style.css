@@ -206,3 +206,44 @@ footer {
     padding: 30px;
   }
 }
+/* =========================
+   SOBRE / PORTFÓLIO
+   ========================= */
+
+.about-intro p {
+  max-width: 800px;
+  margin-bottom: 15px;
+}
+
+.about-portfolio {
+  margin-top: 40px;
+}
+
+.about-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.about-card {
+  flex: 1;
+  min-width: 250px;
+  background: #f9f9f9;
+  padding: 25px;
+  border-radius: 8px;
+  border-left: 4px solid #00c2ff;
+}
+
+.about-card h3 {
+  margin-bottom: 10px;
+}
+
+.about-diff ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-diff li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
