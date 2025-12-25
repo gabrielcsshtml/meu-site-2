@@ -2,7 +2,8 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Contato | Gabriel Fernando</title>
+  <title>Contacto | Gabriel Fernando</title>
+  <meta name="description" content="Entre em contacto para solicitar orçamento ou tirar dúvidas sobre seu site.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,8 +13,8 @@
     <div class="logo">
       <img src="logo1.png" alt="Logo Gabriel Fernando">
     </div>
-    <h1>Gabriel Fernando</h1>
-    <p>Desenvolvedor de Sites Profissionais</p>
+    <h1>Vamos conversar?</h1>
+    <p>Conte-me sobre o seu projecto</p>
   </div>
 </header>
 
@@ -22,26 +23,70 @@
     <a href="index.html">Início</a>
     <a href="sobre.html">Sobre</a>
     <a href="servicos.html">Serviços</a>
-    <a href="contato.html">Contato</a>
+    <a href="contato.html">Contacto</a>
   </div>
 </nav>
 
 <main class="container">
-  <section>
-    <h2>Contato</h2>
 
-    <form action="https://formsubmit.co/gabrielgstz0040@gmail.com" method="POST">
-      <input type="hidden" name="_subject" value="Novo contato pelo site">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://gabrielcsshtml.github.io/meu-site-2/">
+  <!-- BLOCO DE CONTACTO -->
+  <section class="contact-wrapper">
 
-      <input type="text" name="name" placeholder="Seu nome" required>
-      <input type="email" name="email" placeholder="Seu email" required>
-      <textarea name="message" placeholder="Sua mensagem" required></textarea>
+    <!-- INFO -->
+    <div class="contact-info">
+      <h2>Fale comigo</h2>
+      <p>
+        Se precisa de um site profissional ou quer tirar dúvidas,
+        estou disponível para conversar.
+      </p>
 
-      <button type="submit">Enviar mensagem</button>
-    </form>
+      <ul>
+        <li>📧 Email: gabrielgstz0040@gmail.com</li>
+        <li>📱 WhatsApp: +351 937 923 406</li>
+        <li>🌍 Atendimento online</li>
+      </ul>
+
+      <a href="https://wa.me/351937923406" target="_blank" class="btn secondary">
+        Falar no WhatsApp
+      </a>
+    </div>
+
+    <!-- FORM -->
+    <div class="contact-form-box">
+      <h2>Envie uma mensagem</h2>
+
+      <form 
+        action="https://formsubmit.co/gabrielgstz0040@gmail.com"
+        method="POST"
+      >
+        <input type="hidden" name="_subject" value="Novo contacto pelo site">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://gabrielcsshtml.github.io/webdesingner/">
+
+        <div class="form-group">
+          <label>Nome</label>
+          <input type="text" name="name" placeholder="O teu nome" required>
+        </div>
+
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" name="email" placeholder="O teu email" required>
+        </div>
+
+        <div class="form-group">
+          <label>Mensagem</label>
+          <textarea name="message" placeholder="Descreve o teu projecto" required></textarea>
+        </div>
+
+        <button type="submit" class="btn primary btn-full">
+          Enviar mensagem
+        </button>
+      </form>
+    </div>
+
   </section>
+
 </main>
 
 <footer>
@@ -50,4 +95,3 @@
 
 </body>
 </html>
-
